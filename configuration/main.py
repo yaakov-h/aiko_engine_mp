@@ -5,11 +5,15 @@ settings = {
 # "application":     "applications/joysticks",
 # "application":     "applications/led_strip",
 # "application":     "applications/nodebots",
-  "application":     "applications/schedule/schedule",
+#  "application":     "applications/schedule/schedule",
 # "application":     "applications/step_controller",
 # "application":     "applications/squirrel",
 # "application":     "applications/swagbadge",
 # "application":     "lolibot",
+  "applications":     [
+    "applications/leds",
+    "applications/schedule/schedule"
+  ],
 
   "denye_pins":       [12, 14],  # If touch_pins pressed, don't run "main.py"
   "logger_enabled":   False,     # Display everyone's log output

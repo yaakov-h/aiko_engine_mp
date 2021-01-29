@@ -40,9 +40,9 @@ aiko.upgrade.initialise()
 
 aiko.net.initialise()
 
-if parameter("application"):
-  application_name = parameter("application")
-  application = __import__(application_name)
-  application.initialise()
+if parameter("applications"):
+  for application_name in parameter("applications"):
+    application = __import__(application_name)
+    application.initialise()
 
 aiko.event.loop_thread()
